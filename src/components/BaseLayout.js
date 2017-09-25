@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
+import Sky from '../styles/casey-horner-339150.jpg'
 
 export default class BaseLayout extends Component {
   render(){
@@ -7,6 +8,7 @@ export default class BaseLayout extends Component {
       "textAlign": "center",
       "height": "35vw",
       "color": "#fff",
+      "backgroundImage": {Sky},
       "backgroundPosition": "center",
       "backgroundSize": "cover",
       "backgroundRepeat": "none",
@@ -19,7 +21,7 @@ export default class BaseLayout extends Component {
             <div className="navbar-header">
               <ul className="nav navbar-nav">
                 <li>
-                  <NavLink activeClassName="selected"  activeStyle={{color: "yellow"}} className="nav-link" exact to='/'> <span className="splash">PollyBlog</span></NavLink>
+                  <NavLink activeClassName="selected"  activeStyle={{color: "#FAD334"}} className="nav-link" exact to='/'> <span className="splash">PollyBlog</span></NavLink>
                 </li>
                 <li>
                   <NavLink activeClassName="selected"  activeStyle={{color: "#FAD334"}} className="nav-link" exact to='/createpost'> <span className="splash">Create Post </span></NavLink>
@@ -28,13 +30,6 @@ export default class BaseLayout extends Component {
                 <NavLink activeClassName="selected"  activeStyle={{color: "#FAD334"}} className="nav-link" exact to='/showpost'> <span className="splash">Show All Posts</span></NavLink>
                 </li>
               </ul>
-            </div>
-          </div>
-          <div className="col-lg-12 header" style={headerStyle}>
-            <div className="starwars">
-              <img src="//cssanimation.rocks/demo/starwars/images/star.svg" alt="Star" />
-              <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars"/>
-              <h2 className="byline" id="byline">Welcome to PollyBlog</h2>
             </div>
           </div>
         </nav>
