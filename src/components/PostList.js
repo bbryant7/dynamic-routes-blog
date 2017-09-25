@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 
 
 class PostList extends Component {
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
 
     this.state = {
       blogs: [],
@@ -23,12 +23,12 @@ class PostList extends Component {
 
 
     render() {
-      let blogs = this.state.blogs.map((title, index) =>{
+      let blogs = this.state.blogs.map((blog, index) =>{
           return (
             <div key={index} className="card w-100">
               <div className="card-body">
                 <br></br>
-                <Link className="card-title">{title.blogTitle}</Link>
+                <Link to={`/showpost/${blog._id}`}>{blog.blogTitle}</Link>
               </div>
             </div>
           );

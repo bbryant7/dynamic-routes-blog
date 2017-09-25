@@ -7,9 +7,9 @@ class CreatePost extends Component {
     super();
 
     this.state = {
-      blogAuthor: "",
+      authorName: "",
       blogTitle: "",
-      blogPost: ""
+      blogEntry: ""
     };
 
   }
@@ -17,7 +17,7 @@ class CreatePost extends Component {
   handleBlogChange = e => {
      e.preventDefault();
      console.log(e.target);
-     this.setState({ blogPost: e.target.value });
+     this.setState({ blogEntry: e.target.value });
    };
    handleTitleChange = e => {
       e.preventDefault();
@@ -27,7 +27,7 @@ class CreatePost extends Component {
     handleAuthorChange = e => {
        e.preventDefault();
        console.log(e.target);
-       this.setState({ blogAuthor: e.target.value });
+       this.setState({ authorName: e.target.value });
      };
 
 
