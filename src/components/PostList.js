@@ -28,7 +28,7 @@ class PostList extends Component {
             <div key={index} className="card w-100">
               <div className="card-body">
                 <br></br>
-                <h6 className="card-title">{title.blogTitle}</h6>
+                <Link className="card-title">{title.blogTitle}</Link>
               </div>
             </div>
           );

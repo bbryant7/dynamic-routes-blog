@@ -35,9 +35,9 @@ class CreatePost extends Component {
      addToList = (e) => {
           e.preventDefault();
           this.setState({
-            blogAuthor: e.target.value,
+            authorName: e.target.value,
             blogTitle: e.target.value,
-            blogPost: e.target.value,
+            blogEntry: e.target.value,
 
           });
           let blogListItem = JSON.stringify(this.state);
@@ -56,9 +56,9 @@ class CreatePost extends Component {
         }).catch(err => {
           console.log(err, "boo!");
         });
-        this.setState({blogAuthor: '',
+        this.setState({authorName: '',
                       blogTitle: '',
-                      blogPost:''
+                      blogEntry:''
       });
       };
 
@@ -72,7 +72,7 @@ class CreatePost extends Component {
     <div className= "form-group">
     <label className="form-control-label" for="author">Author:  </label>
     <br></br>
-    <input name="author" type="text" className="form-control" placeholder="Enter your name or username" onChange={this.handleAuthorChange} value={this.state.blogAuthor}/>
+    <input name="author" type="text" className="form-control" placeholder="Enter your name or username" onChange={this.handleAuthorChange} value={this.state.authorName}/>
     <br></br>
     </div>
     <div className= "form-group">
@@ -86,7 +86,7 @@ class CreatePost extends Component {
 
      <label className="form-control-label" for="blog">Blog Post: </label>
      <br></br>
-    <textarea rows="4" cols="50" className="form-control" name="blog" type="text" placeholder="Blog..." onChange={this.handleBlogChange} value={this.state.blogPost}></textarea>
+    <textarea rows="4" cols="50" className="form-control" name="blog" type="text" placeholder="Blog..." onChange={this.handleBlogChange} value={this.state.blogEntry}></textarea>
     <br></br>
     </div>
     <button className="btn btn-info" type="submit">Post Blog</button>
