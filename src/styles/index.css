@@ -2,4 +2,36 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #BDCCEC;
+}
+
+.navbar-nav {
+  margin: 0;
+ padding: 0;
+ display: flex;
+ background-color: #C7CECF;
+}
+
+.nav-link {
+  flex-direction: row;
+  padding: 20px;
+  text-decoraction: none;
+
+}
+
+li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+footer {
+  margin: 0;
+ padding: 0;
+  text-align: center;
+  background-color: #C7CECF;
+
+}
+
+footer {
+  padding: 20px;
 }

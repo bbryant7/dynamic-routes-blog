@@ -19,7 +19,7 @@ export default class BaseLayout extends Component {
         <nav className="row navbar navbar-inverse">
           <div className="container-fluid">
             <div className="navbar-header">
-              <ul className="nav navbar-nav">
+              <ul className="navbar-nav">
                 <li>
 
                   <NavLink activeClassName="selected"  activeStyle={{color: "#FAD334"}} className="nav-link" exact to='/'> <span className="splash">PollyBlog</span></NavLink>
