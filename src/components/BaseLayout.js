@@ -21,14 +21,22 @@ export default class BaseLayout extends Component {
             <div className="navbar-header">
               <ul className="nav navbar-nav">
                 <li>
+
                   <NavLink activeClassName="selected"  activeStyle={{color: "#FAD334"}} className="nav-link" exact to='/'> <span className="splash">PollyBlog</span></NavLink>
+
                 </li>
                 <li>
+
                   <NavLink activeClassName="selected"  activeStyle={{color: "#FAD334"}} className="nav-link" exact to='/createpost'> <span className="splash">Create Post </span></NavLink>
+
                 </li>
                 <li>
-                <NavLink activeClassName="selected"  activeStyle={{color: "#FAD334"}} className="nav-link" exact to='/showpost'> <span className="splash">Show All Posts</span></NavLink>
+
+                <NavLink activeClassName="selected"  activeStyle={{color: "#FAD334"}} className="nav-link" exact to='/postlist'> <span className="splash">Show All Posts</span></NavLink>
+
                 </li>
+
+
               </ul>
             </div>
           </div>
